@@ -1,0 +1,219 @@
+/* ==========================================================================
+   GLOBAL & NAVIGATION STYLES
+   ========================================================================== */
+
+/* Single CSS declaration to remove bullet points from navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Base Navigation Container Styling */
+header {
+  background-color: #1e293b;
+  padding: 1rem 0;
+  position: top;
+  width: 100%;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #3b82f6;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: #f8fafc;
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   HOME PAGE STYLES (FLUID LAYOUT)
+   ========================================================================== */
+
+/* Style 1: Relative unit fluid container padding and max-width scaling */
+.home-container {
+  max-width: 90vw;
+  margin: 2rem auto;
+  padding: 2rem 5%;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+}
+
+/* Style 2: Fluid typography with rem and responsive viewport units */
+.home-title {
+  font-size: calc(1.8rem + 1vw);
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Style 3: Custom hero section callout with background accents */
+.home-hero {
+  background-color: #e0f2fe;
+  border-left: 6px solid #0284c7;
+  padding: 1.5em;
+  margin-bottom: 2rem;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Style 4: Responsive grid container using relative fractional units */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Style 5: Styled card modules with custom shadows and hover transforms */
+.home-card {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+}
+
+
+/* ==========================================================================
+   RESUME PAGE STYLES (FIXED LAYOUT)
+   ========================================================================== */
+
+/* Style 1: Fixed-width layout wrapper defined in pixel units */
+.resume-container {
+  width: 800px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style 2: Styled resume section header with bottom accent border */
+.resume-section-header {
+  font-size: 22px;
+  color: #1e3a8a;
+  border-bottom: 2px solid #1e3a8a;
+  padding-bottom: 6px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+/* Style 3: Formatted job entry title with bold weight and distinct color */
+.job-title {
+  font-weight: bold;
+  color: #0f172a;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+/* Style 4: Distinct metadata display for dates and locations */
+.job-meta {
+  font-style: italic;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Style 5: Bulleted skill badge list layout */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-badge {
+  background-color: #e2e8f0;
+  color: #334155;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+
+/* ==========================================================================
+   PERSONAL PAGE STYLES
+   ========================================================================== */
+
+/* Style 1: Personal profile header banner layout */
+.personal-banner {
+  background-linear-gradient: (135deg, #4f46e5, #7c3aed);
+  background-color: #4f46e5;
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Style 2: Custom image thumbnail styling with circular borders */
+.profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Style 3: Personal hobbies section block formatting */
+.hobby-section {
+  max-width: 85%;
+  margin: 0 auto 2rem auto;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 5px solid #7c3aed;
+}
+
+/* Style 4: Blockquote highlight container for personal quotes */
+.favorite-quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #475569;
+  background-color: #f8fafc;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid #94a3b8;
+  margin: 1.5rem 0;
+}
+
+/* Style 5: Gallery photo frame styling with subtle hover opacity */
+.gallery-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.gallery-item {
+  border: 3px solid #e2e8f0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover {
+  opacity: 0.85;
+}
