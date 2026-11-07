@@ -17,7 +17,8 @@ nav ul {
 header {
   background-color: #1e293b;
   padding: 1rem 0;
-  position: top;
+  position: sticky;
+  top: 0;
   width: 100%;
 }
 
@@ -160,14 +161,13 @@ body {
 
 /* Style 1: Personal profile header banner layout */
 .personal-banner {
-  background-linear-gradient: (135deg, #4f46e5, #7c3aed);
+  background-image: linear-gradient(135deg, #4f46e5, #7c3aed);
   background-color: #4f46e5;
   color: #ffffff;
   text-align: center;
   padding: 3rem 1rem;
   margin-bottom: 2rem;
 }
-
 /* Style 2: Custom image thumbnail styling with circular borders */
 .profile-image {
   width: 160px;
